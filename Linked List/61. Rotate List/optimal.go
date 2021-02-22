@@ -13,6 +13,7 @@ func rotateRight(head *ListNode, k int) *ListNode {
     var curr *ListNode
     curr = head
     length := 1
+    // computing the length of the list
     for curr.Next != nil {
         length++
         curr = curr.Next
