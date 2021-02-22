@@ -6,6 +6,10 @@
  * }
  */
 func rotateRight(head *ListNode, k int) *ListNode {
+    // edge cases
+    if head == nil || head.Next == nil || k == 0 {
+        return head
+    }
     var curr *ListNode
     curr = head
     length := 1
